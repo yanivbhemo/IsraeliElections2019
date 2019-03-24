@@ -12,14 +12,19 @@ import Party from './Party'
 
 const styles = StyleSheet.create({
     container: {
-      width: '50%',
+      flex:1,
       flexDirection: 'row',
-      flexWrap: 'wrap'
+      flexWrap: 'wrap',
+      alignItems: 'stretch',
+      justifyContent: 'center'
     },
     middle:{
         paddingTop: 20,
-        paddingLeft: 20,
+        //paddingLeft: 20,
         paddingBottom: 10,
+    },
+    indicator:{
+        marginTop: 20,
     }
   })
 
@@ -106,7 +111,7 @@ export default class PartiesList extends Component {
                 </ScrollView>
             );
         } else {
-            return <ActivityIndicator size="large" color="skyblue" />
+            return <ActivityIndicator size="large" color="skyblue" style={styles.indicator} />
         }
     }
 }

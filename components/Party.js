@@ -3,10 +3,13 @@ import { StyleSheet, Image, TouchableOpacity, Text } from 'react-native'
 
 const styles = StyleSheet.create({
     imageCard: {
-        width: '50%',
-        margin: '1%',
+        width: 150,
+        height: 150,
+        margin: 10,
         aspectRatio: 1,
-        borderRadius: 20
+        borderRadius: 20,
+        borderWidth:1,
+        
     }
 })
 
